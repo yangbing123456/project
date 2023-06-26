@@ -358,9 +358,6 @@
 	export default {
 		data() {
 			return {
-
-
-
 				//echarts数组
 				dataArr: [{
 						title: 'Cotton',
@@ -394,8 +391,6 @@
 					}
 				]
 
-
-				// myChart1: null,
 			}
 		},
 		// onLoad(options) {
@@ -409,18 +404,6 @@
 
 		methods: {
 
-
-
-			// 		// 这里不要忘记把option设置给echarts实例
-			// 		this.myChart.setOption(option);
-			// 		// this.myChart1.setOption(option)
-
-			// 		// 这里是用于窗口变化时的自适应，利用的是echarts自带的resize方法
-			// 		// 如果你打印出来这个echarts实例，可以在函数里面找到这个方法
-			// 		window.addEventListener('resize', () => {
-			// 			this.myChart.resize()
-			// 		});
-			// 	},
 
 		}
 	}

@@ -82,9 +82,12 @@
 					email: this.form.name,
 					userPwd: this.form.password
 				}
+				console.log('点击之后将按钮设置为不可点击状态')
 				//用户登录
 				loginApi.userLogin(obj).then(res => {
 					console.log(res)
+					console.log('直到请求结果回来之后，再将按钮状态改为可点击')
+
 					if (res.status == 1) {
 						this.$refs.uToast.show({
 							title: res.msg,
@@ -106,13 +109,16 @@
 						}, 1000)
 
 					}
+				}).catch(err => {
+					console.log(err)
+					console.log('直到请求结果回来之后，再将按钮状态改为可点击')
 				})
 				//用户信息
 				loginApi.userInformation().then(res => {
 					console.log(res, '用户信息')
 				})
 
-				
+
 				// if (this.form.name && this.form.password) {
 				// 	uni.switchTab({
 				// 		url: '/pages/home/home'
