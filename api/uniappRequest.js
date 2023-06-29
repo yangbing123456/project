@@ -75,7 +75,6 @@ export default {
 	accountMoneyInformation() {
 		return request.get(
 			'/account/getAccountAmtInfo.do',
-
 		)
 	}
 }
